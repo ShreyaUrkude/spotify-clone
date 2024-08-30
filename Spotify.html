@@ -1,0 +1,182 @@
+<html>
+    <title>Spotify Clone
+    </title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background-color: rgb(69,68,68);
+            font-family: sans-serif;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            color: white;
+            padding: 18px;
+            
+        }
+        nav img {
+            width: 6%;
+            margin-left: 22px;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin-right: 33px;
+            margin-top: 5px;
+        }
+        ul li {
+            margin-inline: 28px;
+            margin-top: 6px;
+            
+        }
+        ul button {
+            width: 100px;
+            height: 33px;
+            background-color: greenyellow;
+            color: white;
+            font-size: 18px;
+            border-radius: 21px;
+            border: none;
+        }
+        .conatiner .text  {
+            text-align: center;
+            color: white;
+            padding: 12px;
+        }
+        .items {
+            width: 400px;
+            padding: 12px;
+            color: white;
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 11px;
+            border-radius: 6px;
+            margin-left: 32%;
+        }
+        .items:hover {
+            background-color: rgb(95, 94 ,94);
+        }
+        .card .items img {
+            width:11%;
+            border-radius: 5px;
+        }
+        .items p {
+            margin-top: 11px;
+        }
+        .items span{
+            margin-top: 11px;
+        }
+        .items span i {
+            font-size: 22px;
+        }
+        .seekBar {
+            background-color: black;
+            color: white;
+            margin-top: 12px;
+            padding: 12px;
+           
+        }
+        .seekBar input {
+            width: 420px;
+            text-align: center;
+            margin-left: 32%;
+            margin-top: 7px;
+        }
+        .context
+        {
+            display: flex;
+            justify-content: center;
+        }
+        .context p {
+            margin-inline: 22px;
+            margin-top: 7px;
+            font-size: 18px;
+        }
+        .context i {
+            font-size: 34px;
+        }
+        .context  img {
+            width: 6%;
+            height: 4%;
+            opacity: 0;
+            transition:  1s ease;
+        }
+    </style>
+    <head>
+      <link rel="Stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" >
+    </head>
+    <body>
+      <nav>
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Spotify_App_Logo.svg/1200px-Spotify_App_Logo.svg.png" alt="">
+            </div>
+            <ul>
+                <li>Home </li>
+                <li>SpotifySong's</li>
+                <button>Sign In </button>
+                </ul>
+        </nav>
+        <div class="conatiner">
+            <div class="text">
+                <h2>Music For Everyone </h2>
+                </div>
+                <div class="card">
+               <div class="items">
+                <img src="C:\Users\SHREYA URKUDE\Downloads\Spotify Clone/song.jpeg" alt="">
+                <p>  Meri Maa  </p>
+                <span id="length">4.30 <i id="1" class="fa-regular audio fa-circle-play"></i></span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="items">
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC1g4OU9kb7dYSk5Is8FMOHsNL8sGZ86A_Vg&s" alt="">
+                     <p> Bewfaa Tera Masoom chehra </p>
+                     <span id="length">4.30 <i id="2" class="fa-regular audio  fa-circle-play"></i></span>
+                         </div>
+                     </div>
+
+
+                     <div class="card">
+                        <div class="items">
+                         <img src="https://i1.sndcdn.com/artworks-000458891616-d0lnii-t500x500.jpg" alt="">
+                         <p> Tere Bin nhi Lgda</p>
+                         <span id="length">4.30 <i id="3" class="fa-regular audio fa-circle-play"></i></span>
+                             </div>
+                         </div>
+
+
+                         <div class="card">
+                            <div class="items">
+                             <img src="https://i.ytimg.com/vi/kJwg6moQIuM/maxresdefault.jpg" alt="">
+                             <p>Shining In the Setting Sun </p>
+                             <span id="length">4.30 <i id="4" class="fa-regular audio fa-circle-play"></i></span>
+                                 </div>
+                             </div>
+
+
+                             <div class="card">
+                                <div class="items">
+                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsSbGFpuQnmKPWEym00wYb-NShh5J0fu0J8Q&s" alt="">
+                                 <p> IshQ Tera </p>
+                                 <span id="length">4.30 <i id="5" class="fa-regular audio fa-circle-play"></i></span>
+                                     </div>
+                                 </div>
+                                 </div>
+
+                                 <div class="seekBar">
+                                    <input type="range" id="range" value="0" min="0" max="100">
+                                    <div class="context">
+                                        <img id="gif" src="https://i.pinimg.com/originals/3e/fe/1c/3efe1cb845954233246f60d5d8395dd0.gif" alt="">
+                                        <p id="songName"> Meri Maa </p>
+                                        <i id="masterBtn" class="fa-regular fa-circle-play"></i>
+                                        </div>
+                                        </div>
+                                    <script src="Spotify.js">   </script>
+    </body>
+</html>
